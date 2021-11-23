@@ -1,0 +1,17 @@
+@font-face {
+    src: url(Dosis-Bold.ttf);
+    font-family: Dosis-Bold;
+}
+.h1 {
+    font-size: 30px;
+    line-height: 0px;
+    font-family: Dosis-Bold;
+}
+body {
+    height: 15vh;
+    margin: 40vh;
+    padding: 1rem;
+    display: grid;
+    place-items: center;
+
+  }
