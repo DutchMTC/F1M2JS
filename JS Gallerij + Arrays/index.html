@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Gallery</title>
+    <style type="text/css">
+        body {
+            background-color: red;
+            transition: background-color 7s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Slideshow Gallery</h1>
+    <img id="img" alt="Picture of Kitten" src="http://placekitten.com/800/600">
+    <div class="wrapper">
+        <div class="button" onclick="onClickPrevious()">Previous Image</div>
+        <div class="button" onclick="onClickNext()">Next Image</div>
+    </div>
+
+
+    <script>
+        var position = 0;
+        const imgs = 
+        ["http://placekitten.com/800/600",
+        "http://placekitten.com/807/600",
+        "http://placekitten.com/802/600",
+        "http://placekitten.com/803/600",
+        "http://placekitten.com/804/600",
+        "http://placekitten.com/805/600",
+        "http://placekitten.com/808/600"]
+
+        var imgElement = document.getElementById("img");
+
+        function onClickNext(){
+            position = position + 1;
+            if(position == 7){
+                position = 0;
+            }
+            setImage();
+        }
+
+        function onClickPrevious(){
+            position = position - 1;
+            if(position == -1){
+                position = 6;
+            }
+            setImage();
+
+        }
+
+        function setImage(){
+            if(position == 0){
+                imgElement.src = imgs[0];
+            }
+            else if(position == 1){
+                imgElement.src = imgs[1];
+            }
+            else if(position == 2){
+                imgElement.src = imgs[2];
+            }
+            else if(position == 3){
+                imgElement.src = imgs[3];
+            }
+            else if(position == 4){
+                imgElement.src = imgs[4];
+            }
+            else if(position == 5){
+                imgElement.src = imgs[5];
+            }
+            else if(position == 6){
+                imgElement.src = imgs[6];
+            }
+        }
+
+        var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+
+        var i = 1;
+
+        window.setInterval(function(){
+            document.body.style.backgroundColor = colors[i];
+            i++;
+            if (i === colors.length){
+                i=0;
+            }
+        }, 5000);
+    </script>
+</body>
+</html>
