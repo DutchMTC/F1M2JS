@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boodschappen Sorteren</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Boodschappen Sorteren</h1>
+
+    <div align="center" id="boodschappen">
+        <button onclick="zetInFruitLa('Appel'), this.remove()">Appel</button>
+        <button onclick="zetInFruitLa('Kiwi'), this.remove()">Kiwi</button>
+        <button onclick="zetInGroenteLa('Aardappel'), this.remove()">Aardappel</button>
+        <button onclick="zetInGroenteLa('Sla'), this.remove()">Sla</button>
+        <button onclick="zetInFruitLa('Mango'), this.remove()">Mango</button>
+        <button onclick="zetInFruitLa('Aardbei'), this.remove()">Aardbei</button>
+        <button onclick="zetInGroenteLa('Komkommer'), this.remove()">Komkommer</button>
+    </div>
+
+    <div id="koelkast">
+        <section id="groente">
+            <h2>Groente</h2>
+        </section>
+        <section id="fruit">
+            <h2>Fruit</h2>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

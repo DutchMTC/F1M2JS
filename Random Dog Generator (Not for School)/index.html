@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Gallery</title>
+    <style type="text/css">
+        body {
+            background-color: red;
+            transition: background-color 7s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Dog Generator</h1>
+    <img id="img" alt="Picture of Dog" src="https://images.dog.ceo/breeds/dingo/n02115641_1145.jpg">
+    <div class="wrapper">
+        <div class="button" id="btnClick">New Image</div>
+    </div>
+
+
+    <script>
+        let btn = document.getElementById('btnClick');
+        let image = document.getElementById('img');
+
+        btn.addEventListener('click', function () {
+            fetch("https://dog.ceo/api/breeds/image/random")
+            .then(res => res.json())
+            .then(result => {
+            console.log(result);
+            image.src = result.message;
+        })
+            .catch(err=>console.log(err))
+    })
+
+        var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+
+        var i = 1;
+
+        window.setInterval(function(){
+            document.body.style.backgroundColor = colors[i];
+            i++;
+            if (i === colors.length){
+                i=0;
+            }
+        }, 5000);
+
+    </script>
+</body>
+</html>

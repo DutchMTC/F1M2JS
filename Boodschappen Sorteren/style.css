@@ -1,0 +1,64 @@
+@font-face {
+    font-family: Dosis-Bold;
+    src: url(Dosis-Bold.ttf);
+}
+
+body {
+    background-color: lavender;
+}
+
+#koelkast {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+    font-family: Dosis-Bold;
+}
+
+section {
+    border: 2px solid black;
+    padding: 10px;
+    min-height: 200px;
+    font-family: Dosis-Bold;
+}
+
+h2 {
+    margin: 0 0 10px 0;
+    font-family: Dosis-Bold;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: lightskyblue;
+    color: navy;
+    font-size: 18px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    font-family: Dosis-Bold;
+}
+
+.fruit {
+    color: lightcoral;
+    font-family: Dosis-Bold;
+}
+
+.groente {
+    color: yellowgreen;
+    font-family: Dosis-Bold;
+}
+
+.boodschappen {
+    text-align: center;
+    margin: auto;
+    font-family: Dosis-Bold;
+}
+
+h1 {
+    text-align: center;
+    font-family: Dosis-Bold;
+    margin-bottom: 5px;
+}
