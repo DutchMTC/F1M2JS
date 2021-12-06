@@ -1,0 +1,48 @@
+@font-face {
+    font-family: Dosis-Bold;
+    src: url(Dosis-Bold.ttf);
+}
+
+body{
+    height: 100%;
+}
+
+table{
+    position: absolute;
+    background: linear-gradient(pink,magenta);
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Dosis-Bold;
+}
+
+td{
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    border: black solid 2px;
+    border-collapse: separate; 
+    border-radius: 4px;
+}
+
+.buttons{
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-family: Dosis-Bold;
+}
+
+a{
+    text-decoration: none;
+    background-color: hotpink;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: pink solid 4px;
+    border-radius: 10px;
+}

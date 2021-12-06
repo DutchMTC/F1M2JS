@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div class="buttons">
+            <a href="/Tafels/">1</a>
+            <a href="/Tafels/2">2</a>
+            <a href="/Tafels/3">3</a>
+            <a href="/Tafels/4">4</a>
+            <a href="/Tafels/5">5</a>
+            <a href="/Tafels/6">6</a>
+            <a href="/Tafels/7">7</a>
+            <a href="/Tafels/8">8</a>
+            <a href="/Tafels/9">9</a>
+            <a href="/Tafels/10">10</a>
+        </div>
+    </div>
+    <table id="table">
+
+    </table>
+    <script>
+        var table = document.getElementById("table");
+
+        for(var i = 1; i <= 10; i++){
+            var row = document.createElement("tr");
+            for(var j = 1; j <= 10; j++){
+                var tableData = document.createElement("td");
+                tableData.innerHTML = i * j;
+                row.appendChild(tableData);
+            }
+            table.appendChild(row);
+        }
+    </script>
+</body>
+</html>

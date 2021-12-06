@@ -4,7 +4,8 @@
 }
 
 body {
-    background-color: lavender;
+    background-color: red;
+            transition: background-color 7s;
 }
 
 #koelkast {
@@ -17,6 +18,7 @@ body {
     margin-right: 200px;
     text-align: center;
     font-family: Dosis-Bold;
+    border-radius: 20px;
 }
 
 section {
@@ -24,6 +26,7 @@ section {
     padding: 10px;
     min-height: 200px;
     font-family: Dosis-Bold;
+    border-radius: 20px;
 }
 
 h2 {
@@ -39,6 +42,7 @@ button {
     border: 2px solid black;
     margin-bottom: 10px;
     font-family: Dosis-Bold;
+    border-radius: 5px;
 }
 
 .fruit {
@@ -60,5 +64,5 @@ button {
 h1 {
     text-align: center;
     font-family: Dosis-Bold;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
