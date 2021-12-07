@@ -1,0 +1,60 @@
+@font-face {
+    font-family: Dosis-Bold;
+    src: url(Dosis-Bold.ttf);
+}
+
+body{
+    font-family: Dosis-Bold;
+}
+
+#container{
+    background-color: hsl(323, 100%, 80%);
+    width: 700px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    border: black solid 2px;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+button{
+    height: 20px;
+    width: 20px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    border: black solid 2px;
+}
+
+button:hover{
+    background-color: rgb(129, 129, 129)
+}
+
+button:focus{
+    background-color: rgb(129, 129, 129);
+}
+
+#buttons{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 20px;
+    height: 300px;
+
+}
+
+#title{
+    font-size: 30px;
+    text-align: center;
+    margin: 5px;
+}
