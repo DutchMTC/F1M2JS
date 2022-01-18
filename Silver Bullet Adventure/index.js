@@ -146,7 +146,16 @@ function updateDirections(){
 }
 
 function getInput(){
-    show(myInput.value);
+    var input = myInput.value;
+    if (input >=12){
+        alert("Nummer moet kleiner zijn dan 11!");
+        myInput.value = "";
+    }
+    if (isNaN(input)){
+        alert("Input moet een nummer zijn!");
+        myInput.value = "";
+    }
+    show(input);
     //console.log(myInput.value);
     myInput.value = "";
     myInput.focus();

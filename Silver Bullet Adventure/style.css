@@ -1,5 +1,11 @@
+@font-face {
+    font-family: Dosis-Bold;
+    src: url(Dosis-Bold.ttf);
+}
+
 body{
     background-color: lightpink;
+    font-family: Dosis-Bold;
 }
 
 #container{
@@ -26,6 +32,7 @@ nav button{
     color: white;
     font-size: 16px;
     padding: 10px;
+    font-family: Dosis-Bold;
 }
 
 #knopNoord, #knopZuid {
