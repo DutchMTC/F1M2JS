@@ -1,0 +1,39 @@
+body{
+    background-color: lightpink;
+}
+
+#container{
+    background-color: pink;
+    width: 900px;
+    height: 600px;
+    margin: 50px auto auto auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    border: inset 2px gray;
+}
+
+#myInteraction{
+    padding: 10px;
+}
+
+#mapImage{
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+} 
+nav button{
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+}
+
+#knopNoord, #knopZuid {
+    display: block;
+    width: 300px;
+}
+
+#knopWest, #knopOost {
+    display: inline-block;
+    width: 150px;
+}
